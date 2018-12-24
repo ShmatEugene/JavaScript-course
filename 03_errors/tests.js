@@ -1,5 +1,6 @@
 var task1 = require('./index.js');
 var task2 = require('./task_2.js');
+var task3 = require('./task3.js');
 
 var allNumbers = [1, 2, 4, 5, 6, 7, 8],
 someNumbers = [1, 2, 'привет', 4, 5, 'loftschool', 6, 7, 8],
@@ -28,3 +29,10 @@ function testFilter(task, taskFn) {
     console.log(taskFn(arguments[i], task.isNumber));
   }
 }
+
+//task3
+console.log('Task 3');
+console.log(task3.calculator(10).sum(10, 10));
+console.log(task3.calculator(50).div(10, 15));
+console.log(task3.calculator(10).mul(5, 4));
+console.log(task3.calculator(100).div(5, 2));
